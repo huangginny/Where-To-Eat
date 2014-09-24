@@ -2,11 +2,15 @@
 //  AppDelegate.m
 //  Where To Eat?
 //
-//  Created by Robin on 9/6/14.
+//  Created by Ginny on 9/6/14.
 //  Copyright (c) 2014 Ginny Huang. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "RestaurantStore.h"
+#import "History.h"
+#import "DiceTableViewController.h"
+#import "CategoriesTableViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +18,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    UIStoryboard *storyboard = [UIStoryboard
+                                        storyboardWithName:@"DiceStoryboard"
+                                        bundle:nil];
+    UITabBarController *tabBarController = [storyboard instantiateViewControllerWithIdentifier:@"diceController"];
+    
+    self.window.rootViewController = tabBarController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -29,6 +41,22 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    {
+        BOOL success1 = [[RestaurantStore sharedStore] saveChanges];
+        if (success1) {
+            NSLog(@"Saved all of the Restaurants");
+        }
+        else {
+            NSLog(@"Could not save any of the Restaurants");
+        }
+        BOOL success2 = [[History history] saveChanges];
+        if (success2) {
+            NSLog(@"Saved all of the Histories");
+        }
+        else {
+            NSLog(@"Could not save any of the Histories");
+        }
+    }
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

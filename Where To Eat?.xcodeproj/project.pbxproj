@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0006582C19CBA2A400C2C22F /* HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0006582B19CBA2A400C2C22F /* HeaderTableViewCell.m */; };
+		000D3E0F19CE36EC00563E99 /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = 000D3E0E19CE36EC00563E99 /* History.m */; };
+		001C3B5519C7FE7800DF42A9 /* SelectableRestaurantStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 001C3B5419C7FE7800DF42A9 /* SelectableRestaurantStore.m */; };
+		0065735819C144D100ADEE44 /* DiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0065735719C144D100ADEE44 /* DiceTableViewController.m */; };
+		0065735A19C144EB00ADEE44 /* DiceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0065735919C144EB00ADEE44 /* DiceStoryboard.storyboard */; };
 		009703FF19BB8DCC001A2BF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009703FE19BB8DCC001A2BF1 /* Foundation.framework */; };
 		0097040119BB8DCC001A2BF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0097040019BB8DCC001A2BF1 /* CoreGraphics.framework */; };
 		0097040319BB8DCC001A2BF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0097040219BB8DCC001A2BF1 /* UIKit.framework */; };
@@ -19,6 +24,12 @@
 		0097041A19BB8DCC001A2BF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0097040219BB8DCC001A2BF1 /* UIKit.framework */; };
 		0097042219BB8DCC001A2BF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0097042019BB8DCC001A2BF1 /* InfoPlist.strings */; };
 		0097042419BB8DCC001A2BF1 /* Where_To_Eat_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097042319BB8DCC001A2BF1 /* Where_To_Eat_Tests.m */; };
+		0097042F19BB8F6D001A2BF1 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097042E19BB8F6D001A2BF1 /* Restaurant.m */; };
+		0097043219BB8F81001A2BF1 /* RestaurantStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097043119BB8F81001A2BF1 /* RestaurantStore.m */; };
+		0097043B19BBA951001A2BF1 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097043919BBA951001A2BF1 /* CalendarViewController.m */; };
+		009BFD5719BCE3A100BA78A4 /* CategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BFD5519BCE3A100BA78A4 /* CategoriesTableViewController.m */; };
+		009BFD5C19BD013600BA78A4 /* RestaurantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BFD5A19BD013600BA78A4 /* RestaurantsTableViewController.m */; };
+		009BFD6119BD0C5100BA78A4 /* SelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BFD5F19BD0C5100BA78A4 /* SelectionTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0006582A19CBA2A400C2C22F /* HeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderTableViewCell.h; sourceTree = "<group>"; };
+		0006582B19CBA2A400C2C22F /* HeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderTableViewCell.m; sourceTree = "<group>"; };
+		000D3E0D19CE36EC00563E99 /* History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = History.h; sourceTree = "<group>"; };
+		000D3E0E19CE36EC00563E99 /* History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = History.m; sourceTree = "<group>"; };
+		001C3B5319C7FE7800DF42A9 /* SelectableRestaurantStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectableRestaurantStore.h; sourceTree = "<group>"; };
+		001C3B5419C7FE7800DF42A9 /* SelectableRestaurantStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectableRestaurantStore.m; sourceTree = "<group>"; };
+		0065735619C144D100ADEE44 /* DiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiceTableViewController.h; path = ../DiceTableViewController.h; sourceTree = "<group>"; };
+		0065735719C144D100ADEE44 /* DiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiceTableViewController.m; path = ../DiceTableViewController.m; sourceTree = "<group>"; };
+		0065735919C144EB00ADEE44 /* DiceStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DiceStoryboard.storyboard; path = ../DiceStoryboard.storyboard; sourceTree = "<group>"; };
 		009703FB19BB8DCC001A2BF1 /* Where To Eat?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where To Eat?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		009703FE19BB8DCC001A2BF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0097040019BB8DCC001A2BF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +68,18 @@
 		0097041F19BB8DCC001A2BF1 /* Where To Eat?Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Where To Eat?Tests-Info.plist"; sourceTree = "<group>"; };
 		0097042119BB8DCC001A2BF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0097042319BB8DCC001A2BF1 /* Where_To_Eat_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Where_To_Eat_Tests.m; sourceTree = "<group>"; };
+		0097042D19BB8F6D001A2BF1 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		0097042E19BB8F6D001A2BF1 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		0097043019BB8F81001A2BF1 /* RestaurantStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantStore.h; sourceTree = "<group>"; };
+		0097043119BB8F81001A2BF1 /* RestaurantStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantStore.m; sourceTree = "<group>"; };
+		0097043819BBA951001A2BF1 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		0097043919BBA951001A2BF1 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		009BFD5419BCE3A100BA78A4 /* CategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesTableViewController.h; sourceTree = "<group>"; };
+		009BFD5519BCE3A100BA78A4 /* CategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesTableViewController.m; sourceTree = "<group>"; };
+		009BFD5919BD013600BA78A4 /* RestaurantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantsTableViewController.h; sourceTree = "<group>"; };
+		009BFD5A19BD013600BA78A4 /* RestaurantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantsTableViewController.m; sourceTree = "<group>"; };
+		009BFD5E19BD0C5100BA78A4 /* SelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionTableViewController.h; sourceTree = "<group>"; };
+		009BFD5F19BD0C5100BA78A4 /* SelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +106,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0034632919CFADF500C64FF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0097042D19BB8F6D001A2BF1 /* Restaurant.h */,
+				0097042E19BB8F6D001A2BF1 /* Restaurant.m */,
+				0097043019BB8F81001A2BF1 /* RestaurantStore.h */,
+				0097043119BB8F81001A2BF1 /* RestaurantStore.m */,
+				000D3E0D19CE36EC00563E99 /* History.h */,
+				000D3E0E19CE36EC00563E99 /* History.m */,
+				001C3B5319C7FE7800DF42A9 /* SelectableRestaurantStore.h */,
+				001C3B5419C7FE7800DF42A9 /* SelectableRestaurantStore.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0034632A19CFAE1200C64FF3 /* Roll */ = {
+			isa = PBXGroup;
+			children = (
+				0065735619C144D100ADEE44 /* DiceTableViewController.h */,
+				0065735719C144D100ADEE44 /* DiceTableViewController.m */,
+				009BFD5E19BD0C5100BA78A4 /* SelectionTableViewController.h */,
+				009BFD5F19BD0C5100BA78A4 /* SelectionTableViewController.m */,
+				0006582A19CBA2A400C2C22F /* HeaderTableViewCell.h */,
+				0006582B19CBA2A400C2C22F /* HeaderTableViewCell.m */,
+			);
+			name = Roll;
+			sourceTree = "<group>";
+		};
+		0034632B19CFAE5700C64FF3 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				009BFD5419BCE3A100BA78A4 /* CategoriesTableViewController.h */,
+				009BFD5519BCE3A100BA78A4 /* CategoriesTableViewController.m */,
+				009BFD5919BD013600BA78A4 /* RestaurantsTableViewController.h */,
+				009BFD5A19BD013600BA78A4 /* RestaurantsTableViewController.m */,
+			);
+			name = Manage;
+			sourceTree = "<group>";
+		};
 		009703F219BB8DCC001A2BF1 = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +178,14 @@
 		0097040419BB8DCC001A2BF1 /* Where To Eat? */ = {
 			isa = PBXGroup;
 			children = (
+				0034632919CFADF500C64FF3 /* Model */,
+				0034632A19CFAE1200C64FF3 /* Roll */,
+				0034632B19CFAE5700C64FF3 /* Manage */,
 				0097040D19BB8DCC001A2BF1 /* AppDelegate.h */,
 				0097040E19BB8DCC001A2BF1 /* AppDelegate.m */,
+				0097043819BBA951001A2BF1 /* CalendarViewController.h */,
+				0097043919BBA951001A2BF1 /* CalendarViewController.m */,
+				0065735919C144EB00ADEE44 /* DiceStoryboard.storyboard */,
 				0097041019BB8DCC001A2BF1 /* Images.xcassets */,
 				0097040519BB8DCC001A2BF1 /* Supporting Files */,
 			);
@@ -191,6 +268,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ginny Huang";
 				TargetAttributes = {
+					009703FA19BB8DCC001A2BF1 = {
+						DevelopmentTeam = 7UB5DXWDYP;
+					};
 					0097041519BB8DCC001A2BF1 = {
 						TestTargetID = 009703FA19BB8DCC001A2BF1;
 					};
@@ -220,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0097040919BB8DCC001A2BF1 /* InfoPlist.strings in Resources */,
+				0065735A19C144EB00ADEE44 /* DiceStoryboard.storyboard in Resources */,
 				0097041119BB8DCC001A2BF1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +321,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0097040F19BB8DCC001A2BF1 /* AppDelegate.m in Sources */,
+				0097042F19BB8F6D001A2BF1 /* Restaurant.m in Sources */,
+				000D3E0F19CE36EC00563E99 /* History.m in Sources */,
+				009BFD6119BD0C5100BA78A4 /* SelectionTableViewController.m in Sources */,
+				0097043219BB8F81001A2BF1 /* RestaurantStore.m in Sources */,
+				0006582C19CBA2A400C2C22F /* HeaderTableViewCell.m in Sources */,
+				009BFD5C19BD013600BA78A4 /* RestaurantsTableViewController.m in Sources */,
+				0097043B19BBA951001A2BF1 /* CalendarViewController.m in Sources */,
+				009BFD5719BCE3A100BA78A4 /* CategoriesTableViewController.m in Sources */,
+				0065735819C144D100ADEE44 /* DiceTableViewController.m in Sources */,
+				001C3B5519C7FE7800DF42A9 /* SelectableRestaurantStore.m in Sources */,
 				0097040B19BB8DCC001A2BF1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,10 +448,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Where To Eat?/Where To Eat?-Prefix.pch";
 				INFOPLIST_FILE = "Where To Eat?/Where To Eat?-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Where To Eat?/Where To Eat?-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +469,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Where To Eat?/Where To Eat?-Prefix.pch";
 				INFOPLIST_FILE = "Where To Eat?/Where To Eat?-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Where To Eat?/Where To Eat?-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -437,6 +543,7 @@
 				0097042919BB8DCC001A2BF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0097042A19BB8DCC001A2BF1 /* Build configuration list for PBXNativeTarget "Where To Eat?Tests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +552,7 @@
 				0097042C19BB8DCC001A2BF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

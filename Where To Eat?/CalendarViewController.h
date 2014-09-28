@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CalendarViewController : UIViewController
-
-@property IBOutletCollection(UILabel) NSArray *restaurant_labels;
-@property IBOutletCollection(UILabel) NSArray *date_labels;
+@interface CalendarViewController : UITableViewController
 
 @end

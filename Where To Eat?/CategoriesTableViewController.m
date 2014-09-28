@@ -103,28 +103,6 @@
                                          animated:YES];
 }
 
-- (IBAction)editPressed:(id)sender
-{
-    // If the tableView is editing, change the barButton title to Edit and change the style
-    if (self.tableView.isEditing) {
-        [self.tableView setEditing:NO animated:YES];
-    }
-    else {
-        [self.tableView setEditing:YES animated:YES];
-    }
-}
-
-- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
-    
-    [super setEditing:editing animated:animated];
-    NSLog(@"EDIT BUTTON WILL BEGIN EDITING");
-    if (editing) {
-        [self.tableView setEditing:YES animated:YES];
-    } else {
-        [self.tableView setEditing:NO animated:YES];
-    }
-}
-
 - (IBAction)addNewCategory:(id)sender
 {
     UIAlertView* dialog = [[UIAlertView alloc] initWithTitle:@"Add a category! \n"

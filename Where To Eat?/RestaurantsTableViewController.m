@@ -8,6 +8,10 @@
 
 #import "RestaurantsTableViewController.h"
 #import "RestaurantStore.h"
+#define UIColorFromRGB(rgbValue) [UIColor \
+    colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+    green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+    blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @interface RestaurantsTableViewController ()
 
@@ -29,7 +33,7 @@
         
         // Set this bar button item as the right item in the navigationItem
         navItem.rightBarButtonItem = bbi;
-        self.tableView.separatorColor = [UIColor greenColor];
+        self.tableView.separatorColor = UIColorFromRGB(0x33CC33);
     }
     return self;
 }

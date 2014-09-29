@@ -23,6 +23,8 @@
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO];
     self.navigationItem.title = @"Select restaurants";
+    //self.tableView.sectionHeaderHeight = 60;
+    self.tableView.sectionFooterHeight = 0;
     [self.tableView reloadData];
 }
 
@@ -87,7 +89,7 @@
         [[SelectableRestaurantStore sharedStore] addRestaurantForCategory:category name:restaurant];
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
-    int length = [[[SelectableRestaurantStore sharedStore] allNamesForCategory:category] count];
+    NSUInteger length = [[[SelectableRestaurantStore sharedStore] allNamesForCategory:category] count];
     if (length == 0 || length == 1) {
         [self.tableView reloadData];
     }
@@ -119,7 +121,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 44;
+    return 60;
 }
 
 - (IBAction)selectCellsInSection:(id)sender {

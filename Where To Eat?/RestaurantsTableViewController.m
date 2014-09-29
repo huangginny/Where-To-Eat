@@ -29,6 +29,7 @@
         
         // Set this bar button item as the right item in the navigationItem
         navItem.rightBarButtonItem = bbi;
+        self.tableView.separatorColor = [UIColor greenColor];
     }
     return self;
 }

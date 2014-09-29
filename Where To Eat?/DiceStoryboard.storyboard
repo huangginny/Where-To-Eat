@@ -12,8 +12,10 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="LVq-65-VC1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.90523104499999996" blue="0.79076930069999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.4692808644" blue="0.035192041200000003" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
+                        <color key="separatorColor" red="1" green="0.41987943220000001" blue="0.377454864" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <sections>
                             <tableViewSection id="8Or-QY-YYk">
@@ -98,18 +100,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r6Q-SJ-RgR" id="8z8-T8-bv5">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQX-zS-wcl">
-                                                    <rect key="frame" x="86" y="224" width="148" height="30"/>
-                                                    <state key="normal" title="Roll your restaurant~!">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                        <rect key="frame" x="126" y="265" width="148" height="30"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="roll:" destination="l5W-qS-OTv" eventType="touchUpInside" id="epL-J8-bSZ"/>
-                                                    </connections>
-                                                </button>
                                                 <pickerView hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wrv-hr-F3F">
                                                     <rect key="frame" x="0.0" y="8" width="320" height="162"/>
                                                     <constraints>
@@ -123,6 +113,20 @@
                                                         <outlet property="delegate" destination="l5W-qS-OTv" id="ceN-I8-Mz3"/>
                                                     </connections>
                                                 </pickerView>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQX-zS-wcl">
+                                                    <rect key="frame" x="79" y="225" width="162" height="30"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" title="Roll your restaurant~!">
+                                                        <color key="titleColor" red="1" green="0.41987943220000001" blue="0.377454864" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                        <rect key="frame" x="126" y="265" width="148" height="30"/>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="roll:" destination="l5W-qS-OTv" eventType="touchUpInside" id="epL-J8-bSZ"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="qQX-zS-wcl" secondAttribute="bottom" constant="11" id="7e8-3Z-4pu"/>
@@ -155,7 +159,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1846" y="234"/>
+            <point key="canvasLocation" x="1846" y="245"/>
         </scene>
         <!--Selection Table View Controller-->
         <scene sceneID="aE5-7v-kEF">
@@ -164,24 +168,28 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Pu0-kZ-U17">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.41987943220000001" blue="0.377454864" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="headerCell" id="p1o-bm-nQR" customClass="HeaderTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="60" id="p1o-bm-nQR" customClass="HeaderTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p1o-bm-nQR" id="iB9-YX-ZF3">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-uZ-ZUR">
-                                            <rect key="frame" x="22" y="12" width="68" height="20"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Category" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-uZ-ZUR">
+                                            <rect key="frame" x="21" y="28" width="185" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="185" id="nwu-al-WrG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ha-2l-EhT">
-                                            <rect key="frame" x="214" y="8" width="89" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <rect key="frame" x="214" y="24" width="89" height="30"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <state key="normal" title="Deselect all">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <variation key="widthClass=compact" misplaced="YES">
                                                 <rect key="frame" x="300" y="8" width="81" height="30"/>
@@ -192,9 +200,9 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="xwz-uZ-ZUR" secondAttribute="bottom" constant="3" id="K3S-K9-ZFD"/>
                                         <constraint firstItem="8ha-2l-EhT" firstAttribute="baseline" secondItem="xwz-uZ-ZUR" secondAttribute="baseline" id="K8f-I0-sxj"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="8ha-2l-EhT" secondAttribute="trailing" constant="11" id="YZt-vA-y9V"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xwz-uZ-ZUR" secondAttribute="bottom" constant="5" id="pUv-zc-1Jk"/>
                                         <constraint firstItem="xwz-uZ-ZUR" firstAttribute="leading" secondItem="iB9-YX-ZF3" secondAttribute="leadingMargin" constant="14" id="u5s-rw-288"/>
                                     </constraints>
                                     <variation key="default">
@@ -208,6 +216,7 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.92549026012420654" blue="0.82352948188781738" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <outlet property="categoryLabel" destination="xwz-uZ-ZUR" id="978-Wk-YTw"/>
                                     <outlet property="selectionButton" destination="8ha-2l-EhT" id="TpG-wB-aYA"/>
@@ -229,7 +238,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjH-bi-7K9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2609" y="246"/>
+            <point key="canvasLocation" x="2609" y="244"/>
         </scene>
         <!--Roll Restaurant-->
         <scene sceneID="gwz-qs-mO8">
@@ -237,9 +246,14 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tZz-PW-Fmv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Roll Restaurant" id="Kkp-cW-R3B"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rNe-iz-kew">
+                    <navigationBar key="navigationBar" alpha="0.79999999999999982" contentMode="scaleToFill" barStyle="black" id="rNe-iz-kew">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.41987943222978341" blue="0.37745486399957306" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -255,9 +269,10 @@
             <objects>
                 <tableViewController id="T2b-8S-3AH" customClass="CategoriesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wN3-5w-haj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="j67-hg-vyl">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -288,9 +303,14 @@
             <objects>
                 <navigationController id="pdg-OV-OSV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Manage" id="ujf-PR-EBa"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GHE-Vc-X4C">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="GHE-Vc-X4C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.41987943220000001" blue="0.377454864" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="T2b-8S-3AH" kind="relationship" relationship="rootViewController" id="LEs-DX-LQ7"/>
@@ -305,9 +325,11 @@
             <objects>
                 <tableViewController id="cWb-dg-SP8" customClass="CalendarViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WmH-6I-531">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Iwo-gZ-mpG">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -332,10 +354,9 @@
             <objects>
                 <tabBarController storyboardIdentifier="diceController" automaticallyAdjustsScrollViewInsets="NO" id="FM5-fO-gjD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="npv-AK-ibQ">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="npv-AK-ibQ">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="tZz-PW-Fmv" kind="relationship" relationship="viewControllers" id="8iU-KK-IFb"/>
@@ -353,9 +374,11 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P5b-Rw-Oaq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="mostRecent" id="WQy-WA-ywG"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wdA-mu-zMC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="wdA-mu-zMC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.41987943220000001" blue="0.377454864" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

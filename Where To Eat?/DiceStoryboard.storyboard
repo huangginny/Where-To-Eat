@@ -100,8 +100,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r6Q-SJ-RgR" id="8z8-T8-bv5">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <pickerView hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wrv-hr-F3F">
-                                                    <rect key="frame" x="0.0" y="8" width="320" height="162"/>
+                                                <pickerView hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wrv-hr-F3F">
+                                                    <rect key="frame" x="140" y="0.0" width="320" height="162"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="162" id="J1Q-P0-KEZ"/>
                                                     </constraints>
@@ -113,8 +113,8 @@
                                                         <outlet property="delegate" destination="l5W-qS-OTv" id="ceN-I8-Mz3"/>
                                                     </connections>
                                                 </pickerView>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQX-zS-wcl">
-                                                    <rect key="frame" x="79" y="225" width="162" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQX-zS-wcl">
+                                                    <rect key="frame" x="219" y="225" width="162" height="30"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <state key="normal" title="Roll your restaurant~!">
                                                         <color key="titleColor" red="1" green="0.41987943220000001" blue="0.377454864" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,6 +130,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="qQX-zS-wcl" secondAttribute="bottom" constant="11" id="7e8-3Z-4pu"/>
+                                                <constraint firstItem="Wrv-hr-F3F" firstAttribute="centerX" secondItem="qQX-zS-wcl" secondAttribute="centerX" id="ApH-oF-ROp"/>
+                                                <constraint firstAttribute="centerX" secondItem="qQX-zS-wcl" secondAttribute="centerX" id="igX-y2-Qm9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -354,7 +356,7 @@
             <objects>
                 <tabBarController storyboardIdentifier="diceController" automaticallyAdjustsScrollViewInsets="NO" id="FM5-fO-gjD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="npv-AK-ibQ">
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
